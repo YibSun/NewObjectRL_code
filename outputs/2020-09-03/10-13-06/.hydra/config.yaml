@@ -1,0 +1,21 @@
+algo:
+  batch_size: 256
+  cuda: true
+  seed: 1
+cswm:
+  encoder: small
+param-nested:
+  param-test:
+    list-type1:
+    - 123
+    - 3214
+    - 254
+    list-type2:
+    - 321
+    - 884
+    - string
+  param3: 8334
+param1: 123
+param2: string!
+stove:
+  test: 123

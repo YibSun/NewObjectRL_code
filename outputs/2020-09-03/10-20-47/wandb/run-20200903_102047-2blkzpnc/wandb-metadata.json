@@ -1,0 +1,18 @@
+{
+    "root": "C:\\Users\\walte\\Desktop\\\u6691\u671f\u79d1\u7814\\NewObjectRL-master\\outputs\\2020-09-03\\10-20-47",
+    "program": "C:/Users/walte/Desktop/\u6691\u671f\u79d1\u7814/NewObjectRL-master/run.py",
+    "startedAt": "2020-09-03T02:20:47.409365",
+    "host": "DESKTOP-VO5RO5A",
+    "username": "walte",
+    "executable": "C:\\Coding\\anaconda3\\python.exe",
+    "os": "Windows-10-10.0.18362-SP0",
+    "python": "3.7.0",
+    "cpu_count": 8,
+    "args": [],
+    "state": "running",
+    "jobType": null,
+    "mode": "dryrun",
+    "name": "TestRun-2020-09-03-10-20-47",
+    "project": "TestRun1",
+    "heartbeatAt": "2020-09-03T02:20:49.871905"
+}

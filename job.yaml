@@ -1,0 +1,35 @@
+protocolVersion: 2
+name: test_job_123  # FIXME note to create a unique name
+type: job
+jobRetryCount: 0
+prerequisites:
+  - type: dockerimage
+    name: docker_image_0
+    uri: 'zhao0625/dmlab:0.1'  # TODO you can type in the name of your customized docker image in the portal
+taskRoles:
+  taskrole:
+    instances: 1
+    completion:
+      minFailedInstances: 1
+      minSucceededInstances: -1
+    taskRetryCount: 0
+    dockerImage: docker_image_0
+    resourcePerInstance:  # TODO this is one "unit" of resources (GPU/CPU/Memory)
+      cpu: 16
+      gpu: 1
+      memoryMB: 64000
+    commands:
+      - pip install wandb
+      - wandb login local-9bc1e8747ba56a6bedc50ee1209cbc684975f22b --host=http://10.200.205.226:8080
+      - cd /mnt/nfs-yanjing-hdd/example
+      - python run.py param1=333 param-nested.param3=test-string
+
+defaults:
+  virtualCluster: entwo4gpu  # TODO `test` user only has access to one machine
+extras:
+  com.microsoft.pai.runtimeplugin:
+    - plugin: teamwise_storage
+      parameters:
+        storageConfigNames:
+          - nfs-yanjing-hdd  # TODO the storage you need
+#    - plugin: ssh  # TODO you can enable the SSH plugin from the portal

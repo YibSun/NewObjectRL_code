@@ -1,0 +1,9 @@
+data:
+  test: 'abc'
+cswm:
+  envs: '--atari'
+  default: 'False'
+  num_episodes: 1000
+  seed: 1
+  action: 'store_true'
+

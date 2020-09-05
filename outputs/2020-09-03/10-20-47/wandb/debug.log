@@ -1,0 +1,2 @@
+2020-09-03 10:20:49,834 DEBUG   MainThread:4588 [wandb_config.py:_load_defaults():154] no defaults not found in config-defaults.yaml
+2020-09-03 10:20:49,872 DEBUG   MainThread:4588 [run_manager.py:__init__():547] Initialized sync for TestRun1/2blkzpnc

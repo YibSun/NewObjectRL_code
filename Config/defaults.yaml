@@ -1,0 +1,25 @@
+param1: 123
+param2: string!
+# TODO you can also include comments in YAML files
+param-nested:
+  param3: 8334
+  param-test:
+    list-type1:
+      - 123
+      - 3214
+      - 254
+    list-type2: [321, 884, 'string']
+
+# TODO shared parameters
+algo:
+  seed: 1
+  cuda: True
+  batch_size: 256
+
+# TODO C-SWM parameters
+cswm:
+  encoder: 'small'
+
+# TODO STOVE paramters
+stove:
+  test: 123
